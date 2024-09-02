@@ -29,59 +29,60 @@
       const defaultLocalData = {
         dark: 0, // 黑暗模式 0：随系统 1：开启 2：关闭
         linkMode: 'row', // 排列模式 row: 横向 col：纵向
-        clickHeart: true, // 点击比心 true：开 false：关
-        keySound: true, // 提示音 true：开 false：关
+        clickHeart: false, // 点击比心 true：开 false：关
+        keySound: false, // 提示音 true：开 false：关
         inputEffect: true, // 模拟输入 true：开 false：关
       };
       // 标头
-      const title = 'root@zxecsm:~# ';
+      const title = 'root@xieshang:~# ';
       // 结束语
-      const endWord = 'Welcome to my homepage';
+      const endWord = 'Cheers for nothing!';
       // 命令和输出结果
       const data = [
         {
-          cmd: 'cat me.txt',
+          cmd: 'Contact me',
           res: [
-            { type: 'text', name: 'hakuna matata🪄' },
+            { type: 'text', name: 'My ' },
             {
               type: 'link',
               name: 'Github',
-              link: 'https://github.com/zxecsm',
+              link: 'https://github.com/Xiefengshang',
               logo: '/icon/github.png',
             },
             {
               type: 'link',
-              name: 'Emial',
-              link: 'mailto:zxecsm@outlook.com',
-              logo: '/icon/email.png',
+              name: 'Telegram',
+              link: 'https://t.me/tea1me',
+              logo: '/icon/telegram.png',
             },
           ],
         },
         {
-          cmd: `./links.sh`,
+          cmd: `./project.sh`,
           res: [
+            {
+              type: 'link',
+              name: 'Telegraph图床',
+              link: 'https://img.321210.xyz',
+              logo: '/icon/pic.png',
+            },
+            {
+              type: 'link',
+              name: '服务器探针',
+              link: 'https://tz.321210.xyz',
+              logo: '/icon/monitor.svg',
+            },
+            {
+              type: 'link',
+              name: 'Docker镜像反代',
+              link: 'https://dockerhub.nmmm.de',
+              logo: '/icon/docker.png',
+            },
             {
               type: 'link',
               name: '生成密码',
               link: '/page/getpd',
               logo: '/icon/pd.png',
-            },
-            {
-              type: 'link',
-              name: '数独',
-              link: '/page/suduku',
-              logo: '/icon/sudu.png',
-            },
-            {
-              type: 'link',
-              name: '扫雷',
-              link: '/page/bomb',
-              logo: '/icon/bomb.svg',
-            },
-            {
-              type: 'link',
-              name: 'Bing',
-              link: 'https://bing.com',
             },
           ],
         },
