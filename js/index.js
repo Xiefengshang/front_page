@@ -1,7 +1,7 @@
 const box = document.querySelector('#box');
 const darkData = ['随系统', '已开启', '已关闭'];
 const linkModeData = { row: '横向排列', col: '纵向排列' };
-const inputSpeed = 200; // 输入速度（毫秒）
+const inputSpeed = 150; // 输入速度（毫秒）
 let HASH = queryURLParams(myOpen()).HASH;
 let enter = null;
 let darkStatus = _getData('dark'),
