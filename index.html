@@ -12,7 +12,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="assets" />
-    <title>sudo rm -rf /*</title>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A</title>
+    <script>
+        document.addEventListener("visibilitychange", function() {
+            if (document.visibilityState === 'visible') {
+                // 当网页可见时
+                document.title = 'Terminal';
+            } else if (document.visibilityState === 'hidden') {
+                // 当网页不可见时（例如用户切换到其他标签页）
+                document.title = 'sudo rm -rf /*';
+            }
+        });
+    </script>
+</head>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet icon" href="/favicon.ico" />
   </head>
